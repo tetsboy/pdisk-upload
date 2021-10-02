@@ -9,9 +9,9 @@ import re
 
 API_ID = environ.get('API_ID', '6')
 API_HASH = environ.get('API_HASH', 'eb06d4abfb49dc3eeb1aeb98ae0f581e')
-BOT_TOKEN = environ.get('BOT_TOKEN')
-PDISK_API_KEY = environ.get('PDISK_API_KEY')
-CHANNEL = environ.get('CHANNEL', 'MyTestBotZ')
+BOT_TOKEN = environ.get('BOT_TOKEN', '2017592664:AAGsuM1wOWKuylLknt5jMXuXczVLE0ZkER0')
+PDISK_API_KEY = environ.get('PDISK_API_KEY', '3829b4e7e8f91d636b8d8dca3e27a2ee')
+CHANNEL = environ.get('CHANNEL', 'qMp')
 bot = Client('pdisk bot',
              api_id=API_ID,
              api_hash=API_HASH,
@@ -24,7 +24,7 @@ bot = Client('pdisk bot',
 async def start(bot, message):
     await message.reply(
         f"**Hiya 👋{message.chat.first_name}!**\n\n"
-        "**A Simple PDisk Uploader Bot.\n\n➠ Send Me Any Direct Link, YouTube Link Or Video Link  I Will Upload To PDisk And Give Direct Link\n\nMade With❤BY @MyTestBotZ**")
+        "**A Simple PDisk Uploader Bot.\n\n➠ Send Me Any Direct Link, YouTube Link Or Video Link  I Will Upload To PDisk And Give Direct Link😊😊**")
         
 
 @bot.on_message(filters.text & filters.private)
